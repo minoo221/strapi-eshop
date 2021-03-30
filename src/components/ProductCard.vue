@@ -22,7 +22,7 @@
           :data-item-image="getStrapiMedia(product.thumb.url)"
           :data-item-price="product.price"
           :data-item-name="product.name"
-          :data-item-url="'/product/' + product.slug"
+          :data-item-url="'https://strapi-eshop-test.netlify.app/product/' + product.slug"
         >
           <v-icon>mdi-cart-arrow-down</v-icon>
         </v-btn>

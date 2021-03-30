@@ -30,6 +30,17 @@
             single-line
           ></v-select>
           <div class="product-price">{{ $page.strapi.products[0].price }}</div>
+          <v-btn
+          icon
+          color="pink"
+          class="snipcart-add-item"
+          :data-item-id="product.slug"
+          data-item-description="toto je test"
+          :data-item-image="getStrapiMedia(product.thumb.url)"
+          :data-item-price="product.price"
+          :data-item-name="product.name"
+          :data-item-url="'https://strapi-eshop-test.netlify.app/product/' + product.slug"
+        >
         </v-col>
       </v-row>
     </v-container>

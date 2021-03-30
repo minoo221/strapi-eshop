@@ -4,19 +4,7 @@ const c3 = () => import(/* webpackChunkName: "page--src-pages-index-vue" */ "C:\
 
 export default [
   {
-    path: "/product/salomon-set-escape-6-grip-acces-plk/",
-    component: c1
-  },
-  {
-    path: "/product/fischer-rcr-skate-stiff-race-skate/",
-    component: c1
-  },
-  {
-    path: "/product/fischer-ls-skate-race-skate/",
-    component: c1
-  },
-  {
-    path: "/product/fischer-summit-crown-tour/",
+    path: "/product/fisher-bezky/",
     component: c1
   },
   {
