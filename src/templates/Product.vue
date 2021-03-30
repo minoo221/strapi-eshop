@@ -54,6 +54,7 @@ query ($slug: String!) {
       name
       desc
       price
+      slug
       product_parameters {
         	__typename
         ... on strapiTypes_ComponentSectionsProductParameters {
