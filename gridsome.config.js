@@ -11,13 +11,11 @@ module.exports = {
     {
       use: '@gridsome/source-graphql',
       options: {
-        url: (process.env.GRIDSOME_STRAPI_URL || "http://localhost:1337") + "/graphql",
+        url: (process.env.GRIDSOME_STRAPI_URL || "https://milanblasko.sk") + "/graphql",
         fieldName: 'strapi',
         typeName: 'strapiTypes'
       }
     },
-    {
-      use: "gridsome-plugin-tailwindcss",
-    }
   ],
+
 }

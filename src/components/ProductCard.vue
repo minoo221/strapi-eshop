@@ -17,12 +17,12 @@
           icon
           color="pink"
           class="snipcart-add-item"
-          :data-item-id="product.id"
+          :data-item-id="product.slug"
           data-item-description="toto je test"
           :data-item-image="getStrapiMedia(product.thumb.url)"
           :data-item-price="product.price"
           :data-item-name="product.name"
-          :data-item-url="'/' + product.slug"
+          :data-item-url="'/product/' + product.slug"
         >
           <v-icon>mdi-cart-arrow-down</v-icon>
         </v-btn>
@@ -38,9 +38,6 @@ export default {
   props: ["product"],
   methods: {
     getStrapiMedia,
-  },
-  mounted() {
-    console.log("ahoj " + process.env.GRIDSOME_API_URL);
   },
 };
 </script>

@@ -1,2 +1,8 @@
 [build]
-	publish="dist"
+	publish="/dist"
+[dev]
+    framework="gridsome"
+    command = "npm run develop" # Command to start your dev server
+    port= 3850
+    publish = "/dist" # The path to your static content folder
+    autoLaunch = true

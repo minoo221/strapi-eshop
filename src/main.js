@@ -5,8 +5,8 @@
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import DefaultLayout from '~/layouts/Default.vue'
-import Vuex from 'vuex'
-import axios from 'axios'
+/* import Vuex from 'vuex'
+import axios from 'axios' */
 
 export default function (Vue, { appOptions, head }) {
   head.link.push({
@@ -45,7 +45,7 @@ export default function (Vue, { appOptions, head }) {
 
   appOptions.vuetify = new Vuetify(opts);
 
-  Vue.use(Vuex)
+  /* Vue.use(Vuex)
 
 
   appOptions.store = new Vuex.Store({
@@ -54,7 +54,7 @@ export default function (Vue, { appOptions, head }) {
     mutations: {
 
     }
-  })
+  }) */
 
 
   // Set default layout as a global component
