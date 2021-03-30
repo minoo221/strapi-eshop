@@ -31,16 +31,18 @@
           ></v-select>
           <div class="product-price">{{ $page.strapi.products[0].price }}</div>
           <v-btn
-          icon
-          color="pink"
-          class="snipcart-add-item"
-          :data-item-id="product.slug"
-          data-item-description="toto je test"
-          :data-item-image="getStrapiMedia(product.thumb.url)"
-          :data-item-price="product.price"
-          :data-item-name="product.name"
-          :data-item-url="'https://strapi-eshop-test.netlify.app/product/' + product.slug"
-        >
+            icon
+            color="primary"
+            class="snipcart-add-item"
+            :data-item-id="$page.strapi.products[0].slug"
+            data-item-description="toto je test"
+            :data-item-image="getStrapiMedia($page.strapi.products[0].thumb.url)"
+            :data-item-price="$page.strapi.products[0].price"
+            :data-item-name="$page.strapi.products[0].name"
+            :data-item-url="'https://strapi-eshop-test.netlify.app/product/' + $page.strapi.products[0].slug"
+          >
+            <v-icon>mdi-cart-arrow-down</v-icon></v-btn
+          >
         </v-col>
       </v-row>
     </v-container>

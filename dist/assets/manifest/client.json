@@ -2,20 +2,20 @@
   "publicPath": "/",
   "all": [
     "assets/css/0.styles.71512218.css",
-    "assets/js/app.ed614fff.js",
+    "assets/js/app.8fe3b91d.js",
     "assets/js/page--src-pages-404-vue.1faf5ac3.js",
     "assets/js/page--src-pages-index-vue.5736d439.js",
-    "assets/js/page--src-templates-product-vue.06d33857.js",
+    "assets/js/page--src-templates-product-vue.efe39029.js",
     "assets/js/vendors~page--src-pages-index-vue~page--src-templates-product-vue.a44028cf.js"
   ],
   "initial": [
     "assets/css/0.styles.71512218.css",
-    "assets/js/app.ed614fff.js"
+    "assets/js/app.8fe3b91d.js"
   ],
   "async": [
     "assets/js/page--src-pages-404-vue.1faf5ac3.js",
     "assets/js/page--src-pages-index-vue.5736d439.js",
-    "assets/js/page--src-templates-product-vue.06d33857.js",
+    "assets/js/page--src-templates-product-vue.efe39029.js",
     "assets/js/vendors~page--src-pages-index-vue~page--src-templates-product-vue.a44028cf.js"
   ],
   "modules": {
