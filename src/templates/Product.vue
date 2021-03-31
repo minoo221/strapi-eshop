@@ -93,7 +93,7 @@ query ($slug: String!) {
 import RichText from "~/components/RichText";
 import { getStrapiMedia } from "~/utils/medias";
 import { getMetaTags } from "~/utils/seo";
-
+import axios from "axios";
 export default {
   name: "Product",
   methods: {
@@ -114,6 +114,23 @@ export default {
     return {
       selectedVariant: "",
     };
+  },
+  mounted() {
+    const secret = "YzFjZWRjMGYtODAxMS00ZjgxLTg4ODEtZmEzZTg3MGE1ZGFiNjM3NDkxNzY0NTI2ODMyNDQ0";
+    axios
+      .get("https://app.snipcart.com/api/orders", {
+        headers: {
+          Authorization: `Basic ${btoa(secret)}`,
+          Accept: "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+      })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   },
 };
 </script>
